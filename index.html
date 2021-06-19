@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d9c30c080.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        height: 100vh;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(223, 238, 233, 0.8),
+            rgba(235, 208, 231, 0.8)
+          ),
+          url(https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+        background-size: cover;
+        background-position: top;
+        font-family: "Varela Round", sans-serif;
+        background-color: rgb(208, 230, 243);
+      }
+      header {
+        position: relative;
+      }
+      .logo-box {
+        position: absolute;
+        float: left;
+        left: 2%;
+        margin-top: 2rem;
+      }
+      .logo-box img {
+        height: 5rem;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .contact-box {
+        position: absolute;
+        left: 90%;
+        margin-top: 4rem;
+        font-size: 2rem;
+      }
+
+      .contact-box a {
+        color: #5692ce;
+      }
+      .contact-box a:hover {
+        color: #1570cd;
+      }
+      .contact-box a:active {
+        color: #5692ce;
+      }
+
+      /*---------------------------------- Main Section------------------------------ */
+
+      .text-box {
+        color: #1570cd;
+        display: inline-block;
+        position: absolute;
+        top: 15%;
+        left: 38%;
+        font-size: 1.2rem;
+      }
+      .bill-box {
+        color: #1570cd;
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      }
+      .percentage-box {
+        color: #1570cd;
+        display: inline-block;
+        position: absolute;
+        margin-top: 2rem;
+        top: 42%;
+        left: 35%;
+        font-size: 1.5rem;
+      }
+      .button {
+        color: #1570cd;
+        display: inline-block;
+        position: absolute;
+        top: 60%;
+        left: 42%;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      }
+      input {
+        font-size: 1.5rem;
+        left: 45%;
+      }
+
+      .btn {
+        box-shadow: inset 0px 1px 0px 0px #97c4fe;
+        background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+        background-color: #3d94f6;
+        border-radius: 0.6rem;
+        border: 0.1rem solid #337fed;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: "Varela Round", sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0.9rem 4rem;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #1570cd;
+      }
+      .btn:hover {
+        background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+        background-color: #1e62d0;
+      }
+      .btn:active {
+        position: relative;
+        top: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="contact-box">
+        <a href="https://twitter.com/pangmeepooh"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </header>
+    <main>
+      <div class="text-box">
+        <h1>Tip Calculator</h1>
+      </div>
+      <form action="/index.js" method="POST">
+        <div class="bill-box">
+          <label for="totalbill">Total Bill</label>
+          <input class="bill" type="text" name="bill" />
+        </div>
+        <div class="percentage-box">
+          <label for="percentage">Percentage</label>
+          <input class="percentage" type="text" name="percentage" />
+        </div>
+        <div class="button">
+          <button class="btn">Calculate</button>
+        </div>
+      </form>
+    </main>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
