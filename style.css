@@ -67,7 +67,7 @@ body {
   margin-top: 2rem;
   position: absolute;
   top: 50%;
-  left: 43%;
+  left: 40%;
 }
 .btn {
   box-shadow: inset 0px 1px 0px 0px #97c4fe;
@@ -108,10 +108,13 @@ body {
     left: 34%;
   }
   .input-box {
-    left: 25%;
+    left: 20%;
   }
   .button {
     top: 60%;
     left: 38%;
+  }
+  .result-box{
+    top:53%
   }
 }
