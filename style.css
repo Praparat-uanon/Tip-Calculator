@@ -104,17 +104,23 @@ body {
 /* --------------------------Media Queries Section------------------------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .header-text h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    top:20;
     left: 34%;
+  }
+  .contact-box{
+    left:85%
   }
   .input-box {
     left: 20%;
   }
   .button {
     top: 60%;
-    left: 38%;
+    left: 35%;
   }
   .result-box{
-    top:53%
+    top:55%;
+    left:40%;
+     
   }
 }
