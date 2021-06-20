@@ -102,14 +102,16 @@ body {
 }
 
 /* --------------------------Media Queries Section------------------------- */
-@media only screen and (max-width: 375px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .header-text h1 {
-    font-size: 1;
+    font-size: 1rem;
+    left: 34%;
   }
   .input-box {
-    left: 30%;
+    left: 25%;
   }
   .button {
-    top: 53%;
+    top: 60%;
+    left: 38%;
   }
 }
