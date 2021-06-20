@@ -59,15 +59,14 @@ body {
 }
 .input-box input {
   font-size: 1rem;
+  margin: 0.5rem auto 0.5rem auto;
 }
-.label {
-  margin-top: 1rem;
-}
+
 /* ---------------------------------Button Section------------------------------- */
 .button {
   margin-top: 2rem;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 43%;
 }
 .btn {
@@ -99,7 +98,7 @@ body {
   font-size: 1.2rem;
   position: absolute;
   left: 45%;
-  top: 44%;
+  top: 46%;
 }
 
 /* --------------------------Media Queries Section------------------------- */
@@ -111,7 +110,6 @@ body {
     left: 30%;
   }
   .button {
-    top: 55%;
+    top: 53%;
   }
 }
-
