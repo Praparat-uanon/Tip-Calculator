@@ -44,7 +44,7 @@ body {
 .header-text {
   color: #1570cd;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: absolute;
   top: 15%;
   left: 38%;
@@ -60,7 +60,7 @@ body {
 .input-box input {
   font-size: 1rem;
 }
-#percentage {
+.label {
   margin-top: 1rem;
 }
 /* ---------------------------------Button Section------------------------------- */
@@ -103,11 +103,15 @@ body {
 }
 
 /* --------------------------Media Queries Section------------------------- */
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header-text h1 {
-    font-size: 1.3;
+    font-size: 1;
   }
   .input-box {
     left: 30%;
   }
+  .button {
+    top: 55%;
+  }
 }
+
