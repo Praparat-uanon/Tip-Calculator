@@ -99,7 +99,10 @@ body {
 
 /* --------------------------Media Queries Section------------------------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .logo-box img {
+  height: 2.5rem;
+  }
   .header-text {
-    margin-top: 15%;
+    margin-top: 25%;
   }
 }
