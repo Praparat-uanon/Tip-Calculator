@@ -13,7 +13,6 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   font-family: Verdana;
-  position: relative;
 }
 /* -------------------------------Header Section------------------------------- */
 .logo-box {
@@ -41,21 +40,23 @@ body {
 .contact-box a:hover {
   color: #1570cd;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .header-text {
   color: #1570cd;
   display: inline-block;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 15%;
-  left: 38%;
+  font-size: 1rem;
+  margin-top: 10%;
 }
 
 .input-box {
   font-size: 1.2rem;
   color: #1570cd;
-  position: absolute;
-  top: 30%;
-  left: 37%;
+  margin-top: 1rem;
 }
 .input-box input {
   font-size: 1rem;
@@ -64,10 +65,7 @@ body {
 
 /* ---------------------------------Button Section------------------------------- */
 .button {
-  margin-top: 2rem;
-  position: absolute;
-  top: 50%;
-  left: 40%;
+  margin-top: 3rem;
 }
 .btn {
   box-shadow: inset 0px 1px 0px 0px #97c4fe;
@@ -96,29 +94,12 @@ body {
 .result-box {
   color: #1570cd;
   font-size: 1.2rem;
-  position: absolute;
-  left: 45%;
-  top: 46%;
+  margin-top: 1rem;
 }
 
 /* --------------------------Media Queries Section------------------------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-   .header-text h1 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
   .header-text {
-    top: 23%;
-  }
-  .input-box {
-    left: 20%;
-  }
-  .button {
-    top: 60%;
-    left: 22%;
-  }
-  .result-box {
-    top: 55%;
-    left: 15%;
+    margin-top: 15%;
   }
 }
