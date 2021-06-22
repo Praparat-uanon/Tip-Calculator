@@ -25,21 +25,7 @@ body {
   height: 5rem;
   border-radius: 50%;
 }
-.contact-box {
-  position: absolute;
-  left: 92%;
-  top: 5%;
-}
-.contact-box a {
-  color: #5095da;
-  font-size: 1.5rem;
-}
-.contact-box a:active {
-  color: #5095da;
-}
-.contact-box a:hover {
-  color: #1570cd;
-}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -59,8 +45,12 @@ body {
   margin-top: 1rem;
 }
 .input-box input {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0.5rem auto 0.5rem auto;
+  border-color: #1570cd;
+}
+::placeholder {
+  color: #ccd0d3;
 }
 
 /* ---------------------------------Button Section------------------------------- */
@@ -99,10 +89,7 @@ body {
 
 /* --------------------------Media Queries Section------------------------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .logo-box img {
-  height: 2.5rem;
-  }
   .header-text {
-    margin-top: 25%;
+    margin-top: 15%;
   }
 }
