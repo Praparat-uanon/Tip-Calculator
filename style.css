@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
-body {
+
+.body-tip {
   background-image: linear-gradient(
       to right bottom,
       rgba(225, 238, 223, 0.8),
@@ -19,11 +22,32 @@ body {
   position: absolute;
   float: left;
   top: 5%;
-  left: 2%;
+  left: 3%;
 }
 .logo-box img {
-  height: 5rem;
+  height: 3rem;
   border-radius: 50%;
+}
+.contact-me {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+}
+.contact-me a {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+.contact-me a:hover {
+  transform: scale(1.2);
+}
+.fa-envelope {
+  color: #67bd9c;
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-facebook-square {
+  color: #3b5998;
 }
 
 .container {
@@ -34,8 +58,9 @@ body {
 }
 .header-text {
   color: #1570cd;
-  display: inline-block;
-  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10%;
 }
 
@@ -52,8 +77,51 @@ body {
 ::placeholder {
   color: #ccd0d3;
 }
+/* ---------------------------------Main page-------------------------------- */
+.main-container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 6% 2rem auto 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+  color: #4ca080;
+  margin-bottom: 1.2rem;
+}
 
-/* ---------------------------------Button Section------------------------------- */
+.tipcal-box img {
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+  border: solid;
+  border-color: #67bd9c;
+  margin-right: 2rem;
+  opacity: 60%;
+}
+.sale-box img {
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+  width: 18rem;
+  border: solid;
+  border-color: #67bd9c;
+  opacity: 60%;
+}
+.tipcal-box img:hover {
+  opacity: 100%;
+  transform: scale(1.1);
+}
+.sale-box img:hover {
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+/* ---------------------------------Tip Calculator Section--------------------------- */
 .button {
   margin-top: 3rem;
 }
@@ -81,15 +149,220 @@ body {
   position: relative;
   top: 1px;
 }
-.result-box {
+.resulttip-box {
   color: #1570cd;
   font-size: 1.2rem;
   margin-top: 1rem;
 }
 
+/* -------------------------Discount Calculator Section---------------------- */
+.container1 {
+  color: #c078fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13%;
+  font-family: "Original Surfer", cursive;
+}
+.fullprice-box,
+.discount-box,
+.tax-box {
+  color: #c078fc;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+}
+input {
+  font-size: 1.2rem;
+  border-color: #c078fc;
+  color: #c078fc;
+}
+::placeholder {
+  color: rgb(201, 200, 200);
+  font-size: 1rem;
+}
+
+.result-box {
+  background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+  border-radius: 0.6rem;
+  border: 1px solid #c584f3;
+  color: #fefefe;
+  font-family: "Original Surfer", cursive;
+  font-size: 1.2rem;
+  padding: 0.8rem 5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  display: none;
+}
+.button-box {
+  margin-top: 2rem;
+}
+
+.btn-Discount {
+  box-shadow: inset 0px 1px 0px 0px #efdcfb;
+  background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+  background-color: #dfbdfa;
+  border-radius: 0.6rem;
+  border: 1px solid #c584f3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Original Surfer", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.6rem 3rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #9752cc;
+}
+.btn-Discount:hover {
+  background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  background-color: #bc80ea;
+}
+.btn-Discount:active {
+  position: relative;
+  top: 1px;
+}
+
+.contact-me {
+  display: flex;
+  float: right;
+}
 /* --------------------------Media Queries Section------------------------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .header-text {
+@media only screen and (max-width: 375px) {
+  /* ----------------------Header Section ----------------------*/
+  .logo-box img {
+    height: 1.5rem;
+    top: 2.5%;
+  }
+  .contact-me a {
+    font-size: 0.7rem;
+    top: 2.5%;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+  }
+  h2 {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  /* -----------------Tip Calculator Section------------------- */
+
+  .header-text h1 {
+    font-size: 1.3rem;
     margin-top: 15%;
+  }
+  .input-box input {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+  }
+  .resulttip-box {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .tipcal-box img {
+    height: 6rem;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  /* ------------------------Sales&Tax Section------------------------ */
+
+  .container1 {
+    font-size: 1rem;
+    margin-top: 20%;
+  }
+  .header-box h1 {
+    font-size: 1.5rem;
+  }
+  .sale-box img {
+    height: 6rem;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .sale-box {
+    margin-top: 1.2rem;
+  }
+  .fullprice-box,
+  .discount-box,
+  .tax-box {
+    margin: 0.7rem 0;
+    font-size: 1rem;
+  }
+  .btn-Discount {
+    font-size: 1.2rem;
+  }
+  .result-box {
+    padding: 0.8rem 4rem;
+  }
+  .close-modal {
+    font-size: 1rem;
+  }
+  #result {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* ----------------------Header Section ----------------------*/
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+  }
+  h2 {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+  }
+
+  /* -----------------Tip Calculator Section------------------- */
+  .header-text h1 {
+    font-size: 1.3rem;
+    margin-top: 20%;
+  }
+
+  .tipcal-box img {
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0 auto 0;
+  }
+
+  /* ------------------------Sales&Tax Section------------------------ */
+
+  .header-box h1 {
+    margin-top: 3rem;
+  }
+
+  .sale-box {
+    margin-top: 1rem;
+  }
+
+  .sale-box img {
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
   }
 }
