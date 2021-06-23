@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Ezy CAL | Your Quick Shopping Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/favicon1.ico" type="icon" />
+    <script
+      src="https://kit.fontawesome.com/4d9c30c080.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body-tip">
+    <header>
+      <div class="logo-box">
+        <a href="index.html"><img src="./images/logo.gif" alt="" /></a>
+      </div>
+      <div class="contact-me">
+        <a href="mailto:pang_meepooh@hotmail.com"
+          ><i class="far fa-envelope"></i
+        ></a>
+        <a href="https://twitter.com/pangmeepooh"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/pangmeepooh/"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="header-text">
+        <h1>Tip Calculator</h1>
+      </div>
+      <div class="input-box">
+        <label for="bill">Total Bill :</label>
+        <input type="number" id="bill" placeholder="total amount" /> <br />
+        <label class="label" for="percentage">Percentage :</label>
+        <input type="number" id="percentage" placeholder="10,15,20..(%)" />
+      </div>
+      <div class="resulttip-box">
+        <p id="resulttip"></p>
+      </div>
+      <div class="button">
+        <button class="btn">Calculate</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
