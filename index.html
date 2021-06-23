@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tip Calculator</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Ezy Cal | Quick Calculator</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./images/favicon.ico" type="icon" />
+    <link rel="icon" href="./images/favicon1.ico" type="icon" />
     <script
       src="https://kit.fontawesome.com/4d9c30c080.js"
       crossorigin="anonymous"
@@ -14,27 +19,32 @@
   <body>
     <header>
       <div class="logo-box">
+        <img src="./images/logo.gif" alt="" />
+      </div>
+      <div class="contact-me">
+        <a href="mailto:pang_meepooh@hotmail.com"
+          ><i class="far fa-envelope"></i
+        ></a>
         <a href="https://twitter.com/pangmeepooh"
-          ><img src="./images/logo.gif" alt=""
-        /></a>
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/pangmeepooh/"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
       </div>
     </header>
-
-    <div class="container">
-      <div class="header-text">
-        <h1>Tip Calculator</h1>
+    <div class="main-container">
+      <div class="tipcal-box">
+        <h2>Tip Calculation</h2>
+        <a href="TipCalculator.html">
+          <img src="./images/Tip Calculator.png" alt="tipcalculator" />
+        </a>
       </div>
-      <div class="input-box">
-        <label for="bill">Total Bill :</label>
-        <input type="number" id="bill" placeholder="total amount" /> <br />
-        <label class="label" for="percentage">Percentage :</label>
-        <input type="number" id="percentage" placeholder="10,15,20..(%)" />
-      </div>
-      <div class="result-box">
-        <p id="result"></p>
-      </div>
-      <div class="button">
-        <button class="btn">Calculate</button>
+      <div class="sale-box">
+        <h2>Sales&Tax Calculattion</h2>
+        <a href="Discount.html">
+          <img src="./images/EZY CAL.png" alt="salescalculator" />
+        </a>
       </div>
     </div>
 
