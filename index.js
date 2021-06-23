@@ -1,3 +1,5 @@
+//-------------------------------Tip Calculator Section-------------------------//
+
 const button = document.querySelector(".btn");
 
 const calTip = function () {
@@ -14,8 +16,8 @@ const totalBill = function () {
 
 function myCalculation() {
   document.getElementById(
-    "result"
-  ).innerHTML = `Tip is "${calTip()}". Total amount is "${totalBill()}".`;
+    "resulttip"
+  ).innerHTML = `Tip is "${calTip()}" Total amount is "${totalBill()}"`;
 }
 
 button.addEventListener("click", myCalculation);
