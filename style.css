@@ -97,7 +97,7 @@ h2 {
 .tipcal-box img {
   display: flex;
   justify-content: center;
-  height: 15rem;
+  height: 20rem;
   border: solid;
   border-color: #67bd9c;
   margin-right: 2rem;
@@ -106,8 +106,8 @@ h2 {
 .sale-box img {
   display: flex;
   justify-content: center;
-  height: 15rem;
-  width: 18rem;
+  height: 20rem;
+  width: 23rem;
   border: solid;
   border-color: #67bd9c;
   opacity: 60%;
@@ -240,6 +240,7 @@ input {
   float: right;
 }
 /* --------------------------Media Queries Section------------------------- */
+
 @media only screen and (max-width: 375px) {
   /* ----------------------Header Section ----------------------*/
   .logo-box img {
@@ -253,7 +254,7 @@ input {
   .main-container {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    margin-top: 25%;
   }
   h2 {
     font-size: 0.7rem;
@@ -276,11 +277,12 @@ input {
   }
 
   .tipcal-box img {
-    height: 6rem;
-    width: 8rem;
+    height: 10rem;
+    width: 12rem;
     justify-content: center;
     align-items: center;
     margin-right: 0;
+    margin-top: 1rem;
   }
   /* ------------------------Sales&Tax Section------------------------ */
 
@@ -292,8 +294,8 @@ input {
     font-size: 1.5rem;
   }
   .sale-box img {
-    height: 6rem;
-    width: 8rem;
+    height: 10rem;
+    width: 12rem;
     justify-content: center;
     align-items: center;
   }
@@ -324,10 +326,9 @@ input {
   .main-container {
     display: flex;
     flex-direction: column;
-    height: 60vh;
   }
   h2 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin-bottom: 3px;
   }
 
@@ -340,8 +341,8 @@ input {
   .tipcal-box img {
     display: flex;
     flex-direction: row;
-    height: 6rem;
-    width: 8rem;
+    height: 12rem;
+    width: 14rem;
     justify-content: center;
     align-items: center;
     margin: auto 0 auto 0;
@@ -360,8 +361,8 @@ input {
   .sale-box img {
     display: flex;
     flex-direction: row;
-    height: 6rem;
-    width: 8rem;
+    height: 12rem;
+    width: 14rem;
     justify-content: center;
     align-items: center;
   }
