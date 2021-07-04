@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body-main {
+  background-color: rgb(27, 26, 26);
+}
+
+/* -------------------------------Header Section------------------------------- */
+.header-main {
+  background-color: #fefefe;
+  height: 10vh;
+}
+.logo-box {
+  position: absolute;
+  float: left;
+  top: 2%;
+  left: 3%;
+}
+.logo-box img {
+  height: 5rem;
+  border-radius: 50%;
+}
+.contact-me {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+}
+.contact-me a {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+}
+.contact-me a:hover {
+  transform: scale(1.2);
+}
+.fa-envelope {
+  color: #5634a5;
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+/* ---------------------------------Main page-------------------------------- */
+.main-text {
+  color: #fefefe;
+  text-align: center;
+  margin-top: 6.5%;
+  font-family: "Acme", sans-serif;
+  font-size: 1.5rem;
+}
+.main-text h3 {
+  letter-spacing: 0.2rem;
+  line-height: 0.5rem;
+  margin-top: 1rem;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: 7% auto auto auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box {
+  color: #fefefe;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: 15rem;
+  height: 8rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 15%;
+  font-family: "Acme", sans-serif;
+}
+.b1 {
+  background-color: rgb(143, 72, 209);
+}
+.b2 {
+  background-color: rgb(194, 47, 47);
+}
+.b3 {
+  background-color: rgb(207, 133, 49);
+}
+.b4 {
+  background-color: rgb(212, 74, 166);
+}
+.b5 {
+  background-color: rgb(64, 140, 202);
+}
+.b6 {
+  background-color: rgb(0, 128, 36);
+}
+.box a {
+  color: #fefefe;
+  font-size: 2.5rem;
+}
+
+.box a:hover {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.main-footer {
+  margin-top: 5rem;
+  background-color: #fefefe;
+  text-align: center;
+}
+.logo-footer img {
+  padding-top: 1rem;
+  height: 3rem;
+}
+.main-footer p {
+  font-size: 0.6rem;
+  padding-bottom: 1rem;
+}
+/* ---------------------------------Tip Calculator Section--------------------------- */
+.body-tip {
+  background-color: #fefefe;
+  font-family: "Acme", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-text {
+  color: rgb(143, 72, 209);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.input-box {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(143, 72, 209);
+  margin-top: 1rem;
+}
+
+::placeholder {
+  color: #ccd0d3;
+}
+.input-box input,
+select {
+  width: 50%;
+  border-color: rgb(143, 72, 209);
+  margin: 0.5rem auto 0.5rem auto;
+  font-size: 1rem;
+}
+.button {
+  margin-top: 2rem;
+}
+.btn {
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: linear-gradient(to bottom, rgb(143, 72, 209) 5%, #a42fb6 100%);
+  border-radius: 0.6rem;
+  border: 0.1rem solid #aa31bd;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #941ca7;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #9424a5 5%, #b039c2 100%);
+  background-color: rgb(143, 72, 209);
+  font-size: 1.3rem;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+.resulttip-box {
+  color: rgb(143, 72, 209);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home-box {
+  margin-top: 4rem;
+}
+.home-box a {
+  color: rgb(143, 72, 209);
+  font-size: 1.5rem;
+}
+.home-box a:hover {
+  font-size: 1.6rem;
+  color: #b039c2;
+}
+
+/* -------------------------Discount Calculator Section---------------------- */
+.container1 {
+  color: rgb(194, 47, 47);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-family: "Acme", sans-serif;
+}
+.header-box h1 {
+  font-weight: bold;
+}
+.fullprice-box,
+.discount-box,
+.tax-box {
+  color: rgb(194, 47, 47);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.3rem auto;
+}
+input {
+  font-size: 1.2rem;
+  border-color: rgb(194, 47, 47);
+  color: black;
+}
+::placeholder {
+  color: rgb(201, 200, 200);
+  font-size: 1rem;
+}
+
+.result-box {
+  background: linear-gradient(
+    to bottom,
+    rgb(194, 47, 47) 5%,
+    rgb(136, 18, 18) 100%
+  );
+  border-radius: 0.6rem;
+  border: 1px solid rgb(194, 47, 47);
+  color: #fefefe;
+  font-family: "Acme", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.8rem 5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  display: none;
+}
+.button-box {
+  margin-top: 2rem;
+}
+
+.btn-Discount {
+  box-shadow: inset 0px 1px 0px 0px rgb(194, 47, 47);
+  background: linear-gradient(
+    to bottom,
+    rgb(194, 47, 47) 5%,
+    rgb(170, 21, 21) 100%
+  );
+  border-radius: 0.6rem;
+  border: 1px solid rgb(143, 29, 29);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Acme", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.6rem 3rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(128, 25, 25);
+}
+.btn-Discount:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(143, 29, 29) 5%,
+    rgb(136, 18, 18) 100%
+  );
+  background-color: rgb(143, 29, 29);
+  font-size: 1.4rem;
+}
+.btn-Discount:active {
+  position: relative;
+  top: 1px;
+}
+
+.homepage-box {
+  margin-top: 4rem;
+}
+.homepage-box a {
+  color: rgb(143, 29, 29);
+  font-size: 1.7rem;
+}
+.homepage-box a:hover {
+  font-size: 1.8rem;
+}
+
+/* -----------------------Temperature Converter Section--------------------*/
+.container-temp {
+  color: rgb(207, 133, 49);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+  font-family: "Acme", sans-serif;
+}
+.header-temp h1 {
+  margin-bottom: 1.5rem;
+}
+.cc-box,
+.cal-one,
+.show1-box {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.cc-box,
+.cal-one {
+  margin: 1.5rem auto;
+}
+
+#select {
+  width: 70%;
+  padding: 0.2rem auto;
+  border-color: rgb(185, 113, 30);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.submit-cel {
+  box-shadow: inset 0px 1px 0px 0px rgb(185, 113, 30);
+  background: linear-gradient(
+    to bottom,
+    rgb(207, 133, 49) 5%,
+    rgb(190, 117, 33) 100%
+  );
+  border-radius: 0.6rem;
+  border: 1px solid rgb(207, 133, 49);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Acme", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.4rem 2.5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(207, 133, 49);
+}
+.submit-cel:hover {
+  font-size: 1.4rem;
+}
+
+#cel {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.home-temp,
+.scale-homebox {
+  text-align: center;
+  margin-top: 3rem;
+}
+.home-temp a {
+  font-size: 1.5rem;
+  color: rgb(207, 133, 49);
+}
+
+.home-temp a:hover {
+  font-size: 1.6rem;
+}
+
+/* ------------------------Weight Converter Section----------------------- */
+.body-scale {
+  background-color: #fefefe;
+  font-family: "Acme", sans-serif;
+}
+.scale-container {
+  color: rgb(212, 74, 166);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+}
+.header-scale h1 {
+  margin-bottom: 2rem;
+}
+.kg-box,
+.cal-btn,
+.show-box {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.kg-box input {
+  border-color: rgb(212, 74, 166);
+}
+#select-box {
+  width: 70%;
+  padding: 0.2rem auto;
+  border-color: rgb(212, 74, 166);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.kg-box,
+.btn-box {
+  margin: 1.5rem auto;
+}
+.cal-btn {
+  box-shadow: inset 0px 1px 0px 0px rgb(212, 74, 166);
+  background: linear-gradient(
+    to bottom,
+    rgb(212, 74, 166) 5%,
+    rgb(197, 54, 149) 100%
+  );
+  border-radius: 0.6rem;
+  border: 1px solid rgb(212, 74, 166);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Acme", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.4rem 2.5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(212, 74, 166);
+}
+.cal-btn:hover {
+  font-size: 1.4rem;
+}
+
+#show {
+  margin: 1.2rem auto;
+  font-size: 1.5rem;
+}
+
+.scale-homebox a {
+  font-size: 1.5rem;
+  color: rgb(212, 74, 166);
+}
+.scale-homebox a:hover {
+  font-size: 1.6rem;
+}
+
+/*---------------------------Length Converter Section----------------------*/
+.body-length {
+  background-color: #fefefe;
+  font-family: "Acme", sans-serif;
+}
+.length-container {
+  color: rgb(64, 140, 202);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+}
+.header-length h1 {
+  margin-bottom: 2rem;
+}
+.length-box,
+.showLength-box,
+.cal-length {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+#select-length {
+  width: 70%;
+  padding: 0.2rem auto;
+  border-color: rgb(64, 140, 202);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.submit-length {
+  box-shadow: inset 0px 1px 0px 0px rgb(64, 140, 202);
+  background: linear-gradient(
+    to bottom,
+    rgb(64, 140, 202) 5%,
+    rgb(40, 115, 177) 100%
+  );
+  border-radius: 0.6rem;
+  border: 1px solid rgb(54, 118, 172);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Acme", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.4rem 2.5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(64, 140, 202);
+}
+.submit-length:hover {
+  font-size: 1.4rem;
+}
+.length-box,
+.cal-length {
+  margin: 1.5rem auto;
+}
+.length-box input {
+  color: black;
+  border-color: rgb(64, 140, 202);
+}
+#lengthResult {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.2rem auto;
+}
+
+.length-homebox {
+  margin-top: 3rem;
+}
+.length-homebox a {
+  color: rgb(64, 140, 202);
+  font-size: 1.5rem;
+}
+.length-homebox a:hover {
+  font-size: 1.6rem;
+}
+/* -------------------------BMI Calculator Section------------------------ */
+.body-bmi {
+  background-color: #fefefe;
+  font-family: "Acme", sans-serif;
+}
+.mainBmi-container {
+  color: rgb(0, 128, 36);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+}
+.header-bmi h1 {
+  margin-bottom: 2rem;
+}
+.bmi-box,
+.showBmi-box,
+.bmi-button {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+#weight,
+#height {
+  margin: 1rem auto;
+  border-color: rgb(0, 128, 36);
+  color: black;
+}
+#resultBmi {
+  color: rgb(0, 128, 36);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.2rem auto;
+}
+
+.bmi-btn {
+  box-shadow: inset 0px 1px 0px 0px rgb(0, 128, 36);
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 128, 36) 5%,
+    rgb(0, 99, 28) 100%
+  );
+  border-radius: 0.6rem;
+  border: 1px solid rgb(10, 172, 56);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Acme", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.4rem 2.5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(11, 175, 57);
+}
+.bmi-btn:hover {
+  font-size: 1.4rem;
+}
+.home-bmi {
+  margin-top: 4rem;
+}
+.home-bmi a {
+  color: rgb(0, 128, 36);
+  font-size: 1.5rem;
+}
+.home-bmi a:hover {
+  font-size: 1.6rem;
+}
+/* --------------------------Media Queries Section-------------------------*/
+
+@media only screen and (max-width: 375px) {
+  /* ----------------------Header Section ----------------------*/
+  .main-text {
+    font-size: 1rem;
+  }
+  .main-text h3 {
+    letter-spacing: normal;
+  }
+  .logo-box img {
+    height: 1.5rem;
+    top: 2%;
+  }
+  .contact-me a {
+    font-size: 0.7rem;
+    top: 2.5%;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+  }
+
+  /* -----------------Tip Calculator Section------------------- */
+
+  .header-text h1 {
+    font-size: 1.3rem;
+    margin-top: 15%;
+  }
+  .input-box input,
+  select {
+    width: 40%;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+  }
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+  .resulttip-box {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .tipcal-box img {
+    height: 10rem;
+    width: 12rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+  .home-box a {
+    font-size: 1.3rem;
+  }
+  .home-box a:hover {
+    font-size: 1.4rem;
+  }
+  /* ------------------------Sales&Tax Section------------------------ */
+
+  .container1 {
+    font-size: 1rem;
+    margin-top: 20%;
+  }
+  .header-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .fullprice-box,
+  .discount-box,
+  .tax-box {
+    margin: 0.7rem 0;
+    font-size: 1rem;
+  }
+  .btn-Discount {
+    font-size: 1.2rem;
+  }
+  .result-box {
+    padding: 0.8rem 4rem;
+  }
+  .close-modal {
+    font-size: 1rem;
+  }
+  #result {
+    font-size: 1rem;
+  }
+}
+/* -----------------------Temperature Converter----------------- */
+#cel {
+  font-size: 1rem;
+}
+/* -----------------------Weight Converter----------------- */
+#show {
+  font-size: 1rem;
+}
+/* ---------------------Length Converter------------------- */
+#lengthResult {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 750px) {
+  /* -----------------Header Section------------------- */
+  .logo-box img {
+    height: 2.3rem;
+    top: 2.5%;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+  }
+  .main-text h3 {
+    letter-spacing: normal;
+  }
+
+  /* -----------------Tip Calculator Section------------------- */
+  .header-text h1 {
+    font-size: 1.3rem;
+    margin-top: 20%;
+  }
+  #resulttip {
+    font-size: 1.1rem;
+  }
+  /* ------------------------Sales&Tax Section------------------------ */
+
+  .header-box h1 {
+    margin-top: 3rem;
+  }
+}
+/* -----------------------Weight Converter----------------- */
+#show {
+  font-size: 1.1rem;
+}
+/* ----------------------Length Converter------------------ */
+#lengthResult {
+  font-size: 1.1rem;
+}

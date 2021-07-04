@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Ezy Cal | Temperature Converter</title>
+
+    <!------------ Style.Css ------------------>
+    <link rel="stylesheet" href="style.css" />
+    <!-------------- Favicon ------------------>
+    <link rel="icon" href="./images/favicon.ico" type="icon" />
+    <!------------ Google Font------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <!------------ Font Awesome ------------------>
+    <script
+      src="https://kit.fontawesome.com/4d9c30c080.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body-temp">
+    <header class="header-main">
+      <div class="logo-box">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <div class="contact-me">
+        <a href="mailto:pang_meepooh@hotmail.com"
+          ><i class="far fa-envelope"></i
+        ></a>
+        <a href="https://twitter.com/pangmeepooh"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/pangmeepooh/"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+      </div>
+    </header>
+
+    <div class="container-temp">
+      <div class="header-temp">
+        <h1>Temperature Converter</h1>
+      </div>
+      <div class="cc-box">
+        <label for="select">Select Converter: </label> <br />
+        <select id="select">
+          <option value="select" selected disabled hidden>select</option>
+          <option value="celsius">(°C) to (°F)</option>
+          <option value="cctok">(°C) to (K)</option>
+          <option value="cctora">(°C) to (°Ra)</option>
+          <option value="fahtocc">(°F) to (°C)</option>
+          <option value="fahtok">(°F) to (K)</option>
+          <option value="fahtora">(°F) to (°Ra)</option>
+          <option value="keltocc">(K) to (°C)</option>
+          <option value="keltofah">(K) to (°F)</option>
+          <option value="keltora">(K) to (°Ra)</option>
+          <option value="ratocc">(°Ra) to (°C)</option>
+          <option value="ratofah">(°Ra) to (°F)</option>
+          <option value="ratokel">(°Ra) to (K)</option>
+        </select>
+        <br />
+        <label class="number" for="input">Enter a number: </label> <br />
+        <input id="number" type="number" />
+        <div class="show1-box">
+          <p id="cel"></p>
+        </div>
+        <div class="cal-one">
+          <button class="submit-cel">Convert</button>
+        </div>
+      </div>
+    </div>
+    <div class="home-temp">
+      <a href="index.html"><i class="fas fa-home"></i></a>
+    </div>
+
+    <script src="temp.js"></script>
+  </body>
+</html>
