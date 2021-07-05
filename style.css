@@ -686,20 +686,20 @@ input {
     font-size: 1rem;
   }
   #result {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 /* -----------------------Temperature Converter----------------- */
 #cel {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 /* -----------------------Weight Converter----------------- */
 #show {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 /* ---------------------Length Converter------------------- */
 #lengthResult {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 @media only screen and (max-width: 750px) {
   /* -----------------Header Section------------------- */
@@ -732,9 +732,9 @@ input {
 }
 /* -----------------------Weight Converter----------------- */
 #show {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 /* ----------------------Length Converter------------------ */
 #lengthResult {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
